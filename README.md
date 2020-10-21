@@ -1,15 +1,17 @@
 
-# Your Package Name
+# phyllispkg
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of _your package name_ is to ...
+The goal of _phyllispkg_ is to ...
 
 ## Installation
 
-You can install the  _your package name_ with:
+You can install the  _phyllispkg_ with:
 
 ``` r
+# install.packages("devtools")
+devtools::install_github(etc5523-2020/r-package-assessment-Phyllis-Lin)
 ```
 
 ## Example
@@ -17,7 +19,8 @@ You can install the  _your package name_ with:
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(yourpkg)
-## basic example code
+library(phyllispkg)
+library(tibble)
+map
 ```
 
