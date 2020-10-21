@@ -19,4 +19,7 @@ tidy <- read.csv("type.csv")%>%
   dplyr::select(-X) %>%
   as.data.frame()
 
+coun <- read.csv("coun.csv") %>%
+  as.data.frame()
+
 
