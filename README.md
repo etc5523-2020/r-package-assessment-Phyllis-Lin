@@ -53,3 +53,5 @@ map1 <- map %>% filter(date== "2020-04-10") %>%
         label        = ~country,
         labelOptions = labelOptions(textsize = 15))
 ```
+
+<img src="man/figures/leafmap.png" width="100%" />

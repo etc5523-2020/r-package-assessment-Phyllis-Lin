@@ -61,4 +61,11 @@ map1 <- map %>% filter(date== "2020-04-10") %>%
         labelOptions = labelOptions(textsize = 15))
 ```
 
+```{r external-image, echo=FALSE, out.width='100%', fig.align='middle'}
+# adding the figure from COVID-19 Dashboard
+knitr::include_graphics("man/figures/leafmap.png")
+```
+
+
+
 

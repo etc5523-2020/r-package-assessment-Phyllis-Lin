@@ -1,8 +1,11 @@
 ---
-title: "How to launch my Shinyapp"
+title: "How to launch my shinyapp"
+package: phyllispkg
+author: "Peimin Lin"
+date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{How to launch my Shinyapp}
+  %\VignetteIndexEntry{Howto}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -11,7 +14,7 @@ vignette: >
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.width = 7
+  fig.width = 5
 )
 ```
 
@@ -31,6 +34,7 @@ map
 ```
 
 
+![leaflet dashboard](../man/Figures/map.png){width=700px}
 
-
-
+![Plot dashboard](../man/Figures/plot.png){width=700px}
+![Table dashboard](../man/Figures/table.png){width=700px}
