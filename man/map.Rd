@@ -5,7 +5,16 @@
 \alias{map}
 \title{Covid-19 map}
 \format{
-An object of class \code{grouped_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 27072 rows and 7 columns.
+a tibble with 27072 observations and 7 variables
+\itemize{
+\item \strong{type}: type of COVID-19 cases, confirmed, death, recovered
+\item \strong{date}: date from 2020-01-22 to 2020-07-31
+\item \strong{country}: 10 main countries, US, Australia, China, Italy, Belgium, Spain, Germany, Korean, Japan, England
+\item \strong{cases}: number of cases
+\item \strong{province}: province/ or state in some countires
+\item \strong{longitutde}: relative location longitutde
+\item \strong{latitude}: relative location latitude
+}
 }
 \source{
 The data are provided by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) and Rami Krispin and other 4 contributor provided a tidy format of the data as r package coronavirus.

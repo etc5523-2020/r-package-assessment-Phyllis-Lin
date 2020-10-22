@@ -1,0 +1,26 @@
+---
+title: "How to launch my Shinyapp"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How to launch my Shinyapp}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(phyllispkg)
+```
+
+There are three data set use in this package and all are provided by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) and Rami Krispin and other 4 contributor provided a tidy format of the data as r package coronavirus. The package provides the `map` dataset, which contains longitude and latitude of 10 main countries and different type of cases number every day. 
+
+
+
+
+
