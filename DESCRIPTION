@@ -6,7 +6,7 @@ Authors@R:
            family = "Lin",
            role = c("aut", "cre"),
            email = "plin0018@student.monash.edu")
-Description: Contains data and my first Shinyapp
+Description: Contains data and my first Shinyapp.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -15,12 +15,16 @@ RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
 Imports: 
-    shiny
+    shiny,
+    tidyverse,
+    tibble
 Suggests: 
     knitr,
     rmarkdown,
     leaflet,
     ggplot2,
     coronavirus,
-    rlang
+    rlang,
+    glue,
+    dplyr
 VignetteBuilder: knitr

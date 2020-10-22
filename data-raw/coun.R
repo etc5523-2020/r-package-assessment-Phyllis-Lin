@@ -8,16 +8,16 @@ coun <- coronavirus %>%
   summarise(total_cases = sum(cases)) %>% # sum the cases after grouping
   pivot_wider(names_from = type, values_from = total_cases) %>% # change the table type into wider
   arrange(date) %>% # arrange the date from early to latest
-  filter(country %in% c("China",
-                        "US",
-                        "Italy",
-                        "Spain",
-                        "Belgium",
-                        "Korean",
-                        "Japan",
-                        "England",
-                        "Australia",
-                        "Germany"))
+  filter(country%in%c("China",  
+                      "US",
+                      "Italy",
+                      "Spain",
+                      "Belgium",
+                      "India",
+                      "Japan",
+                      "United Kingdom",
+                      "Australia",
+                      "Germany"))  # select 10 main countries in coronavirus 
 
 
 usethis::use_data(coun, overwrite = TRUE)

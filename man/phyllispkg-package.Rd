@@ -6,7 +6,7 @@
 \alias{phyllispkg-package}
 \title{phyllispkg: My first R package}
 \description{
-Contains data and my first Shinyapp
+Contains data and my first Shinyapp.
 }
 \author{
 \strong{Maintainer}: Peimin Lin \email{plin0018@student.monash.edu}

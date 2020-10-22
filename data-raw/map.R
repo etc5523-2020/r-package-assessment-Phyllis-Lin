@@ -9,9 +9,9 @@ map <- coronavirus %>%
                       "Italy",
                       "Spain",
                       "Belgium",
-                      "Korean",
+                      "India",
                       "Japan",
-                      "England",
+                      "United Kingdom",
                       "Australia",
                       "Germany"))%>%  # select 10 main countries in coronavirus 
   group_by(type,date,country,cases, province,long,lat) %>%
