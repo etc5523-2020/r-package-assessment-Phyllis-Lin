@@ -21,3 +21,4 @@ coun <- coronavirus %>%
 
 
 usethis::use_data(coun, overwrite = TRUE)
+
