@@ -1,6 +1,7 @@
 
 # phyllispkg
 <!-- badges: start -->
+[![R build status](https://github.com/etc5523-2020/r-package-assessment-Phyllis-Lin/workflows/R-CMD-check/badge.svg)](https://github.com/etc5523-2020/r-package-assessment-Phyllis-Lin/actions)
 <!-- badges: end -->
 
 The goal of _phyllispkg_ is to ...
