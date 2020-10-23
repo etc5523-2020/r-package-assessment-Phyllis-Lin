@@ -18,7 +18,7 @@
 #' @export
 
 leaf_output <- function(data, type_choose, date_choose){
-     data %>% filter(type == type_choose,   # apply the type input
+     data %>% dplyr::filter(type == type_choose,   # apply the type input
                  date == date_choose) %>%   #apply the chosen date input
     leaflet() %>%   # add map 
     addTiles() %>%  

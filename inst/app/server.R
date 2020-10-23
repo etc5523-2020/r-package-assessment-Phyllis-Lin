@@ -53,7 +53,11 @@ server <- function(input, output, session) {
       data <- data[data$type == input$caseType,]
     }
     data
-  }))
+  })
+    
+    
+)
+  
 }
 
 
