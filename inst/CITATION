@@ -1,0 +1,99 @@
+citHeader("To cite lubridate in publications use:")
+
+citEntry(entry = "Article",
+  title        = "Dates and Times Made Easy with {lubridate}",
+  author       = personList(as.person("Garrett Grolemund"),
+                   as.person("Hadley Wickham")),
+  journal      = "Journal of Statistical Software",
+  year         = "2011",
+  volume       = "40",
+  number       = "3",
+  pages        = "1--25",
+  url          = "http://www.jstatsoft.org/v40/i03/",
+
+  textVersion  =
+  paste("Garrett Grolemund, Hadley Wickham (2011).",
+        "Dates and Times Made Easy with lubridate.",
+        "Journal of Statistical Software, 40(3), 1-25.",
+        "URL http://www.jstatsoft.org/v40/i03/.")
+)
+
+citHeader("To cite shiny in publications use:")
+
+citEntry(entry = "Article",
+  title        = "shiny: Web Application Framework for R",
+  author       = personList(as.person("Winston Chang"),
+                   as.person("Joe Cheng")),
+                   as.person("JJ Allaire")),
+                   as.person("Yihui Xie")),
+                   as.person("Jonathan McPherson")),
+  year         = "2020",
+  note         = “R package version 1.5.0”
+  url          = "https://CRAN.R-project.org/package=shiny",
+
+  textVersion  =
+  paste("Winston Chang, Joe Cheng, JJ Allaire, Yihui Xie and Jonathan McPherson (2020)",
+        "shiny: Web Application Framework for R.",
+        "R package version 1.5.0.",
+        "URL https://CRAN.R-project.org/package=shin")
+)
+
+citHeader("To cite tidyverse in publications use:")
+
+citEntry(entry = "Article",
+  title        = "Welcome to the {tidyverse}",
+  author       = personList(as.person("Hadley Wickham"),
+                   as.person("Mara Averick"),
+                    as.person("Jennifer Bryan"),
+                    as.person("Winston Chang")),
+                    as.person("Lucy D'Agostino McGowan"),
+                    as.person("Romain François"),
+                    as.person("Garrett Grolemund "),
+                    as.person("Alex Hayes"),
+                    as.person("Lionel Henry"),
+                    as.person("Jim Hester"),
+                    as.person("Max Kuhn"),
+                    as.person("Thomas Lin Pedersen"),
+                    as.person("Evan Miller"),
+                    as.person("Stephan Milton Bache"),
+                    as.person("Kirill Müller"),
+                    as.person("Jeroen Ooms"),
+                    as.person("David Robinson"),     
+                    as.person("Dana Paige Seidel"),
+                    as.person("Vitalie Spinu"),
+                    as.person("Kohske Takahashi"),
+                    as.person("Davis Vaughan"),
+                    as.person("Claus Wilke"),
+                    as.person("Kara Woo"),
+                    as.person("Hiroaki Yutani"),
+  year         = "2019",
+  Journal      = "Journal of Open Source Software"
+  volume       = "4",
+  number       = "43",
+  pages        = "1686",
+  url          = "https://doi.org/10.21105/joss.01686",
+
+  textVersion  =
+  paste(" Wickham et al., (2019).",
+        "Welcome to the tidyverse.",
+        "Journal of Open Source Software, 4(43), 1686,.",
+        "URL  https://doi.org/10.21105/joss.01686")
+)
+
+
+citHeader("To cite plotly in publications use:")
+
+citEntry(entry = "Book",
+  title        = "Interactive Web-Based Data Visualization with R, plotly, and shiny",
+  author       = personList(as.person("Carson Sievert")),
+  publisher    = "Chapman and Hall/CRC",
+  year         = "2020",
+  isbn         = "9781138331457","
+  url          = "https://plotly-r.com",
+
+  textVersion  =
+  paste("C. Sievert(2020).",
+        "Interactive Web-Based Data Visualization with R, plotly, and shiny.",
+        "Chapman and Hall/CRC Florida, 2020.",
+        "URL https://plotly-r.com.")
+)
