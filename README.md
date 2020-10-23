@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# phyllispkg
+# phyllispkg <img src='man/figures/phyllispkg.png' align="right" height="138.5" />
 
 <!-- badges: start -->
 
