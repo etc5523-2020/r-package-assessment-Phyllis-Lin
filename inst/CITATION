@@ -86,7 +86,7 @@ citEntry(entry = "Book",
   author       = personList(as.person("Carson Sievert")),
   publisher    = "Chapman and Hall/CRC",
   year         = "2020",
-  isbn         = "9781138331457","
+  isbn         = "9781138331457",
   url          = "https://plotly-r.com",
   textVersion  =
   paste("C. Sievert(2020).",
