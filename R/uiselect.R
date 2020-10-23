@@ -1,27 +1,30 @@
-#' Select date
+#' Select RadioButton type
 #' 
 #' 
-#' @description  This function builds a date input to select the date
+#' @description  This function builds a radioButton to select the type of cases
 #' 
-#' 
-#' @param InputId The unqique id for user to interface the shiny app
-#' @param date The date would like to select
 #' 
 #' @importFrom shiny radioButtons
+#' 
+#' @param inputId The id will access the output from server
+#' @param lable The inpt name 
+#' @param choices Three type of the cases 
 #' 
 #' @return 
 #' 
 #' @examples 
-#' 
+#'  radio_input("Type","Type", choices)
 #'
 #'
 #' @export
-  type_input <- function(inputid, type) {
-    shiny::radioButtons(inputId = inputid, 
-                        label = "Choose a type of cases number",
-                        type,
-                        choices = c("confirmed",
-                         "death",
-                         "recovered"),
-                        selected = "confirmed")
-  }
+ 
+radio_input  <- function(inputId, label, choices) {
+  radioButtons(inputId,
+               label = label,
+               choices = c("confirmed",
+                                "death",
+                                "recovered"), 
+               selected = "confirmed"
+  )
+}
+     

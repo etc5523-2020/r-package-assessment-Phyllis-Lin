@@ -7,10 +7,14 @@ ui <-
     dashboardHeader(title = "COVID-19 Exploration"),
            dashboardSidebar(
              sidebarMenu(
-               menuItem("Plot", tabName = "Plot", icon = icon("chart-bar")),
-               menuItem("Map", tabName = "Map",icon = icon("globe-americas")),
-               menuItem("Table", tabName = "Table",  icon = icon("table") ),
-               menuItem("About", tabName = "About",icon = icon("question-circle"))
+               # menuItem("Plot", tabName = "Plot", icon = icon("chart-bar")),
+               # menuItem("Map", tabName = "Map",icon = icon("globe-americas")),
+               # menuItem("Table", tabName = "Table",  icon = icon("table") ),
+               # menuItem("About", tabName = "About",icon = icon("question-circle"))
+               menu("Plot", "Plot", "chart-bar"),
+               menu("Map", "Map","globe-americas"),
+               menu("Table", "Table", "table"),
+               menu("About", "About", "question-circle")
                )
              ),
     # Body content
@@ -69,11 +73,12 @@ ui <-
                   
                   # Select which type of cases to map 
                  box(title = "Worldwide visualization of COVID-19",
-                   radioButtons("Type1", "Type:",
-                               c("confirmed",
-                                 "death",
-                                 "recovered"),
-                               selected = "confirmed"),
+                   # radioButtons("Type1", "Type:",
+                   #             c("confirmed",
+                   #               "death",
+                   #               "recovered"),
+                   #             selected = "confirmed"),
+                  radio_input("Type1","Type", choices),
                   
                   
                   # date input for choose date
@@ -94,12 +99,13 @@ ui <-
               verbatimTextOutput("number")),
                   box(title = "Growth trend comparisons" ,
                     # select cases type
-                    selectInput("Type2", "Type:",
-                                c("confirmed",
-                                  "death",
-                                  "recovered"),
-                                selected = "confirmed"),
-                    helpText("Select cases type to create plot"),
+                    # selectInput("Type2", "Type:",
+                    #             c("confirmed",
+                    #               "death",
+                    #               "recovered"),
+                    #             selected = "confirmed"),
+                    # helpText("Select cases type to create plot"),
+                    radio_input("Type2","Type", choices),
                     hr(),
                     # date range input 
                     dateRangeInput("Daterange", 
