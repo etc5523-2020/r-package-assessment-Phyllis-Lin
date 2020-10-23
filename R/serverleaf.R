@@ -7,7 +7,7 @@
 #' @importFrom magrittr %>%
 #' @import tidyverse
 #' 
-#' 
+#' @param data Data set choose for map
 #' @param type_choose The type choose
 #' @param date_choose The input date
 #'    
@@ -17,8 +17,8 @@
 #'
 #' @export
 
- leaf_output <- function(type_choose, date_choose){
-  map %>% filter(type == type_choose,   # apply the type input
+leaf_output <- function(data, type_choose, date_choose){
+     data %>% filter(type == type_choose,   # apply the type input
                  date == date_choose) %>%   #apply the chosen date input
     leaflet() %>%   # add map 
     addTiles() %>%  
@@ -31,5 +31,4 @@
       fillOpacity  = 0.5,
       label        = ~country,
       labelOptions = labelOptions(textsize = 15))
- }
-   
+}

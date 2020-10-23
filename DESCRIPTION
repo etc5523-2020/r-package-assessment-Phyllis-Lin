@@ -21,7 +21,8 @@ Imports:
     dplyr,
     tibble,
     magrittr,
-    shinydashboard
+    shinydashboard,
+    pkgdown
 Suggests: 
     knitr,
     rmarkdown,

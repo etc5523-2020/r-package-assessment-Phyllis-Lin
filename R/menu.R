@@ -3,7 +3,7 @@
 #' @description Add menu and icon in the sidebar menu
 #'
 #' @import shinydashboard
-#' 
+#' @import shiny
 #'
 #' @param id Name of the menu
 #' @param tab Tab name of the menu
@@ -17,4 +17,6 @@
    menu <- function(id, tab, name){
                 menuItem(id, tabName = tab, icon = icon(name))
                          
-                         }
+   }
+   
+  
