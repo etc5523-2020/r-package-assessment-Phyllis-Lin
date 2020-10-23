@@ -54,11 +54,7 @@ library(phyllispkg)
 launch_app()
 ```
 
-<p>
-
-<img src="man/figures/plot.png"/>
-
-</p>
+<img src="man/Figures/plot.png" width="100%" />
 
 ## Exported Function
 
@@ -70,4 +66,4 @@ data("map") ## data in package
 leaf_output(type_choose = Type, date_choose = Date)
 ```
 
-<img src="man/figures/leafmap.png" width="100%" />
+<img src="man/Figures/leafmap.png" width="100%" />

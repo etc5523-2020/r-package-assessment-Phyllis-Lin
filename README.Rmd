@@ -56,9 +56,10 @@ launch_app()
 ```
 
 
-<p>
-    <img src="man/figures/plot.png"/>
-</p>
+```{r plot-image, echo=FALSE, out.width='100%', fig.align='middle'}
+# adding the figure from COVID-19 Dashboard
+knitr::include_graphics("man/Figures/plot.png")
+```
 
 
 
@@ -76,7 +77,7 @@ leaf_output(type_choose = Type, date_choose = Date)
 
 ```{r external-image, echo=FALSE, out.width='100%', fig.align='middle'}
 # adding the figure from COVID-19 Dashboard
-knitr::include_graphics("man/figures/leafmap.png")
+knitr::include_graphics("man/Figures/leafmap.png")
 ```
 
 
