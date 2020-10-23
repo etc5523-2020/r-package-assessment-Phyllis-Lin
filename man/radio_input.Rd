@@ -19,8 +19,3 @@ radio_input(inputId, label, choices)
 \description{
 This function builds a radioButton to select the type of cases
 }
-\examples{
- radio_input("Type","Type", choices)
-
-
-}

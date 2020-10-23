@@ -3,16 +3,16 @@
 #' 
 #' @description  This function builds leaflet map
 #' 
-#' @importFrom shiny render leaflet
+#' @import  leaflet
+#' @importFrom magrittr %>%
+#' @import tidyverse
 #' 
-#' @param inputId The id will access the output from server
-#' @param lable The inpt name 
-#' @param choices Three type of the cases 
 #' 
+#' @param type_choose The type choose
+#' @param date_choose The input date
+#'    
 #' @return 
 #' 
-#' @examples 
-#'  leaf_output("confirmed", "2020-02-10")
 #'
 #'
 #' @export

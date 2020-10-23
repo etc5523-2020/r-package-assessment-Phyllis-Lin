@@ -17,14 +17,17 @@ Depends:
 Imports: 
     shiny,
     tidyverse,
-    leaflet, 
+    leaflet,
     dplyr,
-    tibble
+    tibble,
+    magrittr,
+    shinydashboard
 Suggests: 
     knitr,
     rmarkdown,
     ggplot2,
     coronavirus,
     rlang,
-    glue
+    glue,
+    testthat
 VignetteBuilder: knitr

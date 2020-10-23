@@ -12,9 +12,6 @@
 #' 
 #' @return 
 #' 
-#' @examples 
-#'  radio_input("Type","Type", choices)
-#'
 #'
 #' @export
  

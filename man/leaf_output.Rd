@@ -7,20 +7,13 @@
 leaf_output(type_choose, date_choose)
 }
 \arguments{
-\item{inputId}{The id will access the output from server}
+\item{type_choose}{The type choose}
 
-\item{lable}{The inpt name}
-
-\item{choices}{Three type of the cases}
+\item{date_choose}{The input date}
 }
 \value{
 
 }
 \description{
 This function builds leaflet map
-}
-\examples{
- leaf_output("confirmed", "2020-02-10")
-
-
 }

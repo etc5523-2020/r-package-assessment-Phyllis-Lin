@@ -23,12 +23,12 @@ citHeader("To cite shiny in publications use:")
 citEntry(entry = "Article",
   title        = "shiny: Web Application Framework for R",
   author       = personList(as.person("Winston Chang"),
-                   as.person("Joe Cheng")),
-                   as.person("JJ Allaire")),
-                   as.person("Yihui Xie")),
+                   as.person("Joe Cheng"),
+                   as.person("JJ Allaire"),
+                   as.person("Yihui Xie"),
                    as.person("Jonathan McPherson")),
   year         = "2020",
-  note         = “R package version 1.5.0”
+  note         = "R package version 1.5.0",
   url          = "https://CRAN.R-project.org/package=shiny",
 
   textVersion  =
@@ -90,10 +90,27 @@ citEntry(entry = "Book",
   year         = "2020",
   isbn         = "9781138331457","
   url          = "https://plotly-r.com",
-
   textVersion  =
   paste("C. Sievert(2020).",
         "Interactive Web-Based Data Visualization with R, plotly, and shiny.",
         "Chapman and Hall/CRC Florida, 2020.",
         "URL https://plotly-r.com.")
+)
+
+citHeader("To cite shinydashboard in publications use:")
+
+citEntry(entry = "BibTeX",
+  title        = "shinydashboard: Create Dashboards with 'Shiny'",
+  author       = personList(as.person("Winston Chang"),
+                   as.person("Borges Ribeiro")),
+  year         = "2018",
+  note        = "R package version 0.7.1",
+  url          = "https://CRAN.R-project.org/package=shinydashboard",
+
+  textVersion  =
+  paste(" Winston Chang and Barbara Borges Ribeiro (2018).",
+        "shinydashboard: Create Dashboards with 'Shiny'.",
+        "R package version 0.7.1.",
+        "https://CRAN.R-project.org/package=shinydashboard
+")
 )

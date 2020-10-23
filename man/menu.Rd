@@ -13,14 +13,10 @@ menu(id, tab, name)
 \arguments{
 \item{id}{Name of the menu}
 
-\item{name}{The icon name from Frontawsome}
+\item{tab}{Tab name of the menu}
 
-\item{teb}{Tab name of the menu}
+\item{name}{The icon name from Frontawsome}
 }
 \description{
 Add menu and icon in the sidebar menu
-}
-\examples{
-menu("Plot", "Plot", "chart-bar")
-
 }

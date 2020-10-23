@@ -22,10 +22,11 @@ knitr::opts_chunk$set(
 library(phyllispkg)
 ```
 
+## Data
 
-There are three data set use in this package and all are provided by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) and Rami Krispin and other 4 contributor provided a tidy format of the data as r package coronavirus. The package provides the `map` dataset, which contains longitude and latitude of  `r length(unique(map$country))`  main countries  `r glue::glue_collapse(unique(map$country),sep = ", ", last = " and ")` and different type of cases number every day. 
+There are three data set use in this package and all are provided by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) and Rami Krispin and other 4 contributor provided a tidy format of the data as r package coronavirus. 
 
-It can be accessed via:
+The package provides the `map` dataset, which contains longitude and latitude of  `r length(unique(map$country))`  main countries  `r glue::glue_collapse(unique(map$country),sep = ", ", last = " and ")` and different type of cases number every day. It can be accessed via:
 
 ```{r setup}
 library(tibble)
@@ -33,8 +34,33 @@ library(phyllispkg)
 map
 ```
 
+The `tudy` date set also from the same data set but display in different format but without longitude and latitude.
+
+```{r}
+tidy
+```
+
+The `coun` data display each type of cases in longer format.
+
+```{r}
+coun
+```
+
+## Launch Shinyapp
+
+The function ` launch_app() `can run the shinyapp. Meanwhile, ` menu() ` can produce the sidebar menu in the app. 
+
+
+## Shiny Dashboard
+the overview section of the dashboard is a plot visualizing comparison of interesting countries through date range and types of the COVID-19 pandemic progression. There are checkboxes for choosing interesting countries, date range selection for the y-axis can be switched to correspond date interval and select interesting types about confirmed, death and recovered cases.  At the bottom of the plot, I set the event data that when you click the plot that will show the exact number of the cases in the box. 
+![Plot dashboard](../man/Figures/plot.png){width=700px}
+
+## Function
+
+From this dashboard, I used [leaflet]( https://rstudio.github.io/leaflet/) to create another dashboard shows better visualizations of the COVID-19 pandemics through worldwide map. Different from the open section, this map only show one day that you would be interested in through a date selection and select the cases type of the cases. At there are some countries increased sharply in some specific day that I set the shadow radius as the logarithm squared of cases number. Function `radio_input ` can create radio Buttons input, `leaf_input()` can create relative leaflet map. 
 
 ![leaflet dashboard](../man/Figures/map.png){width=700px}
 
-![Plot dashboard](../man/Figures/plot.png){width=700px}
-![Table dashboard](../man/Figures/table.png){width=700px}
+
+
+
