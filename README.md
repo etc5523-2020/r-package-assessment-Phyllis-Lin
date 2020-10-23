@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# phyllispkg <img src='man/Figures/phyllispkg.png' align="right" height="138.5" />
+# 🌸 phyllispkg <img src='man/Figures/phyllispkg.png' align="right" height="138.5" />
 
 <!-- badges: start -->
 
@@ -24,7 +24,7 @@ severe outbreak and select the data from 22nd Jan to 31st Jul 2020. The
 data set have 7 variables contained data, province in some countries,
 longitude, latitude and cases number of three different types.
 
-## Installation
+## 💻Installation
 
 You can install the released version of phyllispkg from
 [CRAN](https://CRAN.R-project.org) with:
@@ -40,12 +40,12 @@ And the development version from [GitHub](https://github.com/) with:
 devtools::install_github("etc5523-2020/r-package-assessment-Phyllis-Lin")
 ```
 
-## Further explortation about the Shinyapp
+## 🌏Further explortation about the Shinyapp
 
 For further exploration about the shinyapp, I wrote a post can be found
 here [covidpost](https://peimin-lin-blog.netlify.app/post/blog-3/)
 
-## Example
+## 🖼Example
 
 To launch the app:
 
@@ -56,7 +56,7 @@ launch_app()
 
 <img src="man/Figures/plot.png" width="100%" />
 
-## Exported Function
+## ⏩Exported Function
 
 This is a basic example which shows you how to create a leaflet map:
 

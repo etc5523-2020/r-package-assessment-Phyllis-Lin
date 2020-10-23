@@ -1,22 +1,33 @@
+template:
+  params:
+    bootswatch: flatly
+
 navbar:
   structure:
-    left:
-    - home
-    - intro
-    - reference
-    - articles
-    - tutorials
-    - news
-    right: github
-  components:
+    right: [github,blog]
+    left: [home]
+ components:
     home:
-      icon: fas fa-home fa-lg
+      text: Get started
       href: index.html
-    reference:
-      text: Reference
-      href: reference/index.html
-    articles:
-      text: Articles
-      menu:
-      - text: How to launch my shinyapp
-        href: articles/Howto.html
+    blog:
+      icon: fa-blog fa-lg
+      href: https://peimin-lin-blog.netlify.app/
+    github:
+      icon: fa-github fa-lg
+      href: https://github.com/etc5523-2020/r-package-assessment-Phyllis-Lin
+
+reference:
+- title: "shintapp data"
+  contents:
+  - map
+  - tidy
+  - coun
+- title: "Launching Shiny Dashboard"
+  contents:
+  - launch_app
+- title: "Functions From the Shiny Dashboard"
+  contents:
+  - menu
+  - leaf_output
+  - radio_input
