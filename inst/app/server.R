@@ -6,24 +6,28 @@ server <- function(input, output, session) {
    })
                 
    # output map
+  
+  # output$map <- renderLeaflet({
+    # map %>% filter(type == input$Type1,   # apply the type input
+    #                date == input$Date)%>%   #apply the chosen date input
+    #   leaflet() %>%   # add map 
+    #   addTiles() %>%  
+    #   addCircleMarkers(     # add circle Markers in map according the cases number
+    #     lng          = ~long,
+    #     lat          = ~lat,
+    #     radius       = ~log(cases^2),
+    #     stroke       = FALSE,
+    #     color        =  "#BB4444",
+    #     fillOpacity  = 0.5,
+    #     label        = ~country,
+    #     labelOptions = labelOptions(textsize = 15)
+    #   )
+# })
+  
   output$map <- renderLeaflet({
-    map %>% filter(type == input$Type1,   # apply the type input
-                   date == input$Date)%>%   #apply the chosen date input
-      leaflet() %>%   # add map 
-      addTiles() %>%  
-      addCircleMarkers(     # add circle Markers in map according the cases number
-        lng          = ~long,
-        lat          = ~lat,
-        radius       = ~log(cases^2),
-        stroke       = FALSE,
-        color        =  "#BB4444",
-        fillOpacity  = 0.5,
-        label        = ~country,
-        labelOptions = labelOptions(textsize = 15)
-      )
+    leaf_output(type_choose = input$Type1, date_choose = input$Date)
     
   })
-  
   
   # plot output 
   output$plot <- renderPlotly({
